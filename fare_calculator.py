@@ -25,10 +25,10 @@ if name.strip() == "":
     print("Invalid name, try again")
     name = input("Enter passenger name: ")
 
-distance_str = input("Enter distance (km): ")
+distance_str = input("Enter distance: ")
 if not distance_str.replace('.', '', 1).isdigit() or float(distance_str) <= 0:
     print("Invalid distance, enter a number greater than 0")
-    distance_str = input("Enter distance (km): ")
+    distance_str = input("Enter distance: ")
 distance = float(distance_str)
 
 passengers_str = input("Enter number of passengers: ")
